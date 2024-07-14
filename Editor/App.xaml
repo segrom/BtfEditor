@@ -1,0 +1,38 @@
+﻿<Application x:Class="Editor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Editor"
+             xmlns:viewModel="clr-namespace:Editor.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Editor.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="Theme/ThemeColors.xaml"/>
+                 <ResourceDictionary Source="Theme/CloseControlButtonTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/MinimizeControlButtonTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/ProgressBarTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/ButtonTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/SearchTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/Separator.xaml"/>
+                 <ResourceDictionary Source="Theme/ScrollBarTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/ScrollTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/ItemListTheme.xaml"/>
+             </ResourceDictionary.MergedDictionaries>
+             
+             <DataTemplate DataType="{x:Type viewModel:StartViewModel}">
+                 <view:StartView/>
+             </DataTemplate>
+             
+             <DataTemplate DataType="{x:Type viewModel:FileLoadingViewModel}">
+                 <view:FileLoadingView/>
+             </DataTemplate>
+             
+             <DataTemplate DataType="{x:Type viewModel:EditorViewModel}">
+                 <view:EditorView/>
+             </DataTemplate>
+
+         </ResourceDictionary>
+    </Application.Resources>
+</Application>

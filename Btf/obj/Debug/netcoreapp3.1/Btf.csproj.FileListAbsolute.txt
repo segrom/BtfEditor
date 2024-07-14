@@ -1,0 +1,10 @@
+H:\RiderProjects\btfReader\Btf\bin\Debug\netcoreapp3.1\Btf.deps.json
+H:\RiderProjects\btfReader\Btf\bin\Debug\netcoreapp3.1\Btf.dll
+H:\RiderProjects\btfReader\Btf\bin\Debug\netcoreapp3.1\Btf.pdb
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.csproj.AssemblyReference.cache
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.GeneratedMSBuildEditorConfig.editorconfig
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.AssemblyInfoInputs.cache
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.AssemblyInfo.cs
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.csproj.CoreCompileInputs.cache
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.dll
+H:\RiderProjects\btfReader\Btf\obj\Debug\netcoreapp3.1\Btf.pdb

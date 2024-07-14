@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>Resources\Images\btfico.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="MVVM\Model\" />
+      <Folder Include="Resources\Fonts\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.26100.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Btf\Btf.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Images\btfico.png" />
+      <None Remove="Resources\Images\btfico.ico" />
+      <Resource Include="Resources\Images\btfico.ico" />
+    </ItemGroup>
+
+</Project>

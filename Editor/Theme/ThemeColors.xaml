@@ -1,0 +1,70 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Control colors.-->
+    <SolidColorBrush x:Key="WindowColor" Color="#15151C"></SolidColorBrush>
+    <SolidColorBrush x:Key="ContentColorBrush" Color="#CFCFCF"></SolidColorBrush>
+    
+    <Color x:Key="TextBoxMouseBackground">#202028</Color>
+    <Color x:Key="TextBoxBackground">#252532</Color>
+    <Color x:Key="TextBoxForeground">#CFCFCF</Color>
+    
+    <Color x:Key="ControlLightColor">#2F3289</Color>
+    <Color x:Key="ControlDarkColor">#345B79</Color>
+
+    <Color x:Key="ControlMouseLightOverColor">#4B95C4</Color>
+    <Color x:Key="ControlMouseDarkOverColor">#5E5DAC</Color>
+
+    <Color x:Key="ControlPressedColor">#B86E1C</Color>
+
+    <Color x:Key="MouseBorderColor">#45D4FF</Color>
+    <Color x:Key="PressedBorderColor">#FFEE73</Color>
+
+    <Color x:Key="DisabledBorderDarkColor">#482E2C2F</Color>
+
+    <Color x:Key="DefaultBorderBrushLightBrush">#482E2C2F</Color>
+    <Color x:Key="DefaultBorderBrushDarkColor">#482E2C2F</Color>
+
+    <Color x:Key="CloseButtonColor">#FF2B4C</Color>
+    <Color x:Key="CloseMouseButtonColor">#FF7680</Color>
+    <Color x:Key="ClosePressedButtonColor">#910A0C</Color>
+
+    <Color x:Key="MinimizeButtonColor">#FFBA38</Color>
+    <Color x:Key="MinimizeMouseButtonColor">#FFEE73</Color>
+    <Color x:Key="MinimizePressedButtonColor">#B86E1C</Color>
+    
+    
+    <Color x:Key="ProgressTrackColor">#FFEE73</Color>
+    <Color x:Key="ProgressIndicatorLightColor">#FFEE73</Color>
+    <Color x:Key="ProgressIndicatorDarkColor">#FFBA38</Color>
+    
+    <LinearGradientBrush x:Key="ProgressBarTrackFill"
+                         StartPoint="0,0"
+                         EndPoint="1,0">
+        <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#917016"
+                              Offset="0" />
+                <GradientStop Color="#915518"
+                              Offset="1" />
+            </GradientStopCollection>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="ProgressBarIndicatorAnimatedFill"
+                         StartPoint="0,0"
+                         EndPoint="1,0">
+        <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="Transparent"
+                              Offset="0" />
+                <GradientStop Color="#FFA44F"
+                              Offset="0.4" />
+                <GradientStop Color="#FFA44F"
+                              Offset="0.6" />
+                <GradientStop Color="Transparent"
+                              Offset="1" />
+            </GradientStopCollection>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+</ResourceDictionary>
