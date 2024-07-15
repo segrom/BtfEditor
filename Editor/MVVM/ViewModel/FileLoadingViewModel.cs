@@ -2,11 +2,10 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using btfReader;
-using Editor.Core;
+using BtfEditor.Core;
+using BtfReader;
 
-namespace Editor.MVVM.ViewModel
+namespace BtfEditor.MVVM.ViewModel
 {
     public class FileLoadingViewModel: ObservableObject
     {

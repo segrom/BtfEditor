@@ -1,9 +1,8 @@
 ﻿using System.IO;
-using System.Windows;
-using btfReader;
-using Editor.Core;
+using BtfEditor.Core;
+using BtfReader;
 
-namespace Editor.MVVM.ViewModel
+namespace BtfEditor.MVVM.ViewModel
 {
     public class MainViewModel: ObservableObject
     {

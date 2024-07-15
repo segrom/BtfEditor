@@ -1,6 +1,6 @@
 using System;
 
-namespace btfReader;
+namespace BtfReader;
 
  internal class BtfString: IBtfString
 {

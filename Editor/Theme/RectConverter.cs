@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Editor.Theme
+namespace BtfEditor.Theme
 {
     public class RectConverter : IMultiValueConverter
     {

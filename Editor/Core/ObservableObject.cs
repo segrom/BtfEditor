@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Editor.Core
+namespace BtfEditor.Core
 {
     public abstract class ObservableObject: INotifyPropertyChanged
     {

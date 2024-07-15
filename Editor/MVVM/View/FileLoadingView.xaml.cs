@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Editor.MVVM.ViewModel;
+using BtfEditor.MVVM.ViewModel;
 
-namespace Editor.MVVM.View
+namespace BtfEditor.MVVM.View
 {
     delegate void UpdateProgressBarDelegate(DependencyProperty dp, object value);
     public partial class FileLoadingView : UserControl

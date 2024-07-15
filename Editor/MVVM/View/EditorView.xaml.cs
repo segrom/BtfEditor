@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using btfReader;
-using Editor.MVVM.ViewModel;
+using BtfEditor.MVVM.ViewModel;
+using BtfReader;
 using Microsoft.Win32;
 
-namespace Editor.MVVM.View
+namespace BtfEditor.MVVM.View
 {
     public partial class EditorView : UserControl
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace Editor.Core
+namespace BtfEditor.Core
 {
     public class RelayCommand: ICommand
     {

@@ -1,4 +1,4 @@
-﻿namespace btfReader;
+﻿namespace BtfReader;
 
 public interface IBtfString
 {
