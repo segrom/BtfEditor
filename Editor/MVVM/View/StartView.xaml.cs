@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using Editor.MVVM.ViewModel;
+using BtfEditor.MVVM.ViewModel;
 using Microsoft.Win32;
 
-namespace Editor.MVVM.View
+namespace BtfEditor.MVVM.View
 {
     public partial class StartView : UserControl
     {

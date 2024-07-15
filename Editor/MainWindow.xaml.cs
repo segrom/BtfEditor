@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using System.Windows.Input;
-using Editor.MVVM.ViewModel;
+using BtfEditor.MVVM.ViewModel;
 
-namespace Editor
+namespace BtfEditor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

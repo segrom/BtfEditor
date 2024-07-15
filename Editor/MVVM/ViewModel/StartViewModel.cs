@@ -1,6 +1,6 @@
-﻿using Editor.Core;
+﻿using BtfEditor.Core;
 
-namespace Editor.MVVM.ViewModel
+namespace BtfEditor.MVVM.ViewModel
 {
     public class StartViewModel: ObservableObject
     {

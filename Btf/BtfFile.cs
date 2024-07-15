@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace btfReader
+namespace BtfReader
 {
     public class BtfFile: IDisposable, INotifyPropertyChanged
     {

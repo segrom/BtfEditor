@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Documents;
 using System.Windows.Input;
-using btfReader;
-using Editor.Core;
-using Editor.MVVM.ViewModel;
+using BtfEditor.Core;
+using BtfReader;
 
-namespace Editor.MVVM.ViewModel
+namespace BtfEditor.MVVM.ViewModel
 {
 
     public class EditorViewModel: ObservableObject, IDisposable
