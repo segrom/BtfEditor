@@ -79,6 +79,7 @@
                         TextBlock.Foreground="{StaticResource ContentColorBrush }"
                         TextBlock.FontSize="12"
                         x:Name="Border"
+                        Margin="0,  2"
                         Padding="2"
                         MinHeight="24"
                         CornerRadius="12"

@@ -30,6 +30,7 @@
                        HorizontalAlignment="Right"
                        Orientation="Horizontal"
                        FlowDirection="RightToLeft">
+               
                <Button
                    Width="100"
                    Content="Save"
@@ -43,6 +44,15 @@
                    Foreground="White"
                    Style="{StaticResource ButtonTheme}"
                    Click="OpenFileClick"/>
+               <TextBlock 
+                   Name="EditedText"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="12"
+                   FontWeight="Bold"
+                   Foreground="#6FA96C"
+                   Text="Edited">
+               </TextBlock>
                
            </StackPanel>
         </Grid>

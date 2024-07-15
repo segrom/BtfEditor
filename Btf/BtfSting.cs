@@ -1,3 +1,5 @@
+using System;
+
 namespace btfReader;
 
  internal class BtfString: IBtfString

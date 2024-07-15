@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Windows.UI.Popups;
 using btfReader;
 using Editor.MVVM.ViewModel;
 using Microsoft.Win32;
@@ -21,6 +20,11 @@ namespace Editor.MVVM.View
         {
             var viewModel = (EditorViewModel)DataContext;
             viewModel.ItemsRefresh += ItemsRefresh;
+            viewModel.File.PropertyChanged += (o, args) =>
+            {
+                EditedText.Visibility = viewModel.File.IsChanged ? Visibility.Visible : Visibility.Hidden;
+            };
+            EditedText.Visibility = viewModel.File.IsChanged ? Visibility.Visible : Visibility.Hidden;
         }
         
         private void Unload(object sender, RoutedEventArgs e)
@@ -37,7 +41,7 @@ namespace Editor.MVVM.View
         
         private void OnListScroll(object sender, MouseWheelEventArgs e)
         {
-            if(sender is Windows.UI.Xaml.Controls.ScrollViewer scv)
+            if(sender is ScrollViewer scv)
             {
                 scv.ScrollToVerticalOffset(scv.VerticalOffset - e.Delta / 2f);
                 e.Handled = true;

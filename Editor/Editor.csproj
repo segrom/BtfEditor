@@ -14,10 +14,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.26100.1" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Btf\Btf.csproj" />
     </ItemGroup>
 

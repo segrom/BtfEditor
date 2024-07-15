@@ -1,18 +1,29 @@
 ﻿using System.Buffers.Binary;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace btfReader
 {
-    public class BtfFile: IDisposable
+    public class BtfFile: IDisposable, INotifyPropertyChanged
     {
         public string Path { get; }
         public int WritingsCount { get; }
         public int FileSize { get; } // in bytes
         public int TextSectionLength { get; } // in chars
-
-        public bool IsChanged { get; private set; }
         
+        private bool _isChanged;
+        public bool IsChanged
+        {
+            get => _isChanged;
+            private set
+            {
+                if (value == _isChanged) return;
+                _isChanged = value;
+                OnPropertyChanged();
+            }
+        }
+
         public IBtfString[] Writings => _writings;
         private readonly BtfString[] _writings;
 
@@ -111,7 +122,7 @@ namespace btfReader
         }
 
         private byte[] _buffer = new byte[10];
-        
+
         #region AsyncHelpers
 
         private async ValueTask<int> ReadIntAsync(int pos, CancellationToken token = default)
@@ -219,6 +230,21 @@ namespace btfReader
         public void Dispose()
         {
             _stream?.Dispose();
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(field, value)) return false;
+            field = value;
+            OnPropertyChanged(propertyName);
+            return true;
         }
     }
 }
